@@ -42,4 +42,18 @@
       </ul>
     </div>
   </nav>
+  
+  <main role="main" class="container">
+    <div class="pb-2 mb-2 border-bottom">
+      {% block header %}{% endblock header %}
+    </div>
+    <div class="content">
+      {% block content %}
+      <!-- Content will be injected here -->
+      {% endblock content %}
+    </div>
+  </main>
+  
 </body>
+
+</html>
